@@ -35,7 +35,7 @@ class Taptwitter(Tap):
         th.Property(
             "max_pages",
             th.IntegerType,
-            default=15,
+            default=5,
             description="The maximum number of pages to retrieve from /2/users/{user_id}/tweets. 20 pages = 2000 tweets (ie 20 * 100)",
         ),
     ).to_dict()
