@@ -61,6 +61,8 @@ class TwitterStream(RESTStream):
         headers = {}
         if "user_agent" in self.config:
             headers["User-Agent"] = self.config.get("user_agent")
+        else: 
+            headers["User-Agent"] = "tap-twitter"
         return headers
 
     def parse_response(self, response: requests.Response) -> Iterable[dict]:
