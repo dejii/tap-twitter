@@ -58,6 +58,7 @@ class TweetStream(TwitterStream):
         "lang",
         "possibly_sensitive",
         "public_metrics",
+        "referenced_tweets",
         "reply_settings",
         "source",
         "withheld",
